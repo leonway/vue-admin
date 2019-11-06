@@ -25,9 +25,9 @@ module.exports = {
   // css相关配置
   css: {
     // 是否使用css分离插件 ExtractTextPlugin
-    extract: true,
+    // extract: true,
     // 开启 CSS source maps?
-    sourceMap: false,
+    sourceMap: true,
     // css预设器配置项
     loaderOptions: {
         sass: { 
@@ -51,7 +51,7 @@ module.exports = {
     port: 8080, // 访问端口
     https: false, // 编译失败时刷新页面
     hot: true, // 开启热加载
-    hotOnly: false,
+    hotOnly: true,
     proxy: null, // 设置代理
     proxy: {
       '/devApi': {
